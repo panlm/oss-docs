@@ -192,8 +192,8 @@ jobs:
   networks:
   - name: default
 
-- name: routerv2
-  template: routerv2
+- name: router_next
+  template: router_next
   instances: 2
   resource_pool: infrastructure
   networks:
@@ -499,6 +499,8 @@ properties:
       email: admin@vmware.com
     cc:
       token_secret: aaabxaiC371JM
+      client_secret: $2a$08$dahioBqSkqa1AbLvaqkLoe5W0aOPN3Ia9W0xkeB926G.AZJhq1SsK
+    admin:
       client_secret: $2a$08$dahioBqSkqa1AbLvaqkLoe5W0aOPN3Ia9W0xkeB926G.AZJhq1SsK
     batch:
       username: do0H2AKay2jAc
